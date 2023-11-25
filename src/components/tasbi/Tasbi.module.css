@@ -1,0 +1,47 @@
+button {
+    border: none;
+    outline: none;
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+.tasbiContainer {
+    box-shadow: rgba(100, 100, 111, 0.81) 0px 7px 29px 0px;
+    background-color: rgba(245, 219, 227, 0.54);
+    border-radius: 10px;
+    color: #072107;
+    display: flex;
+    flex-direction: column;
+    text-align-last: center;
+    padding: 5rem;
+}
+
+.tasbiHeading {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.tasbiSubHeading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.tasbiButton {
+    --accent-color-primary: #e55473;
+    --accent-color-secondary: #f31559;
+    background: var(--accent-color-secondary);
+    border-radius: 0.8rem;
+    color: white;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 1.2rem 2.7rem;
+    transition: all 0.3s ease, translate 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 1px 3rem 2px var(--accent-color-primary);
+        translate: 0 -0.3rem;
+    }
+}

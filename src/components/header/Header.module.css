@@ -1,0 +1,62 @@
+
+.header {
+    background-color: #000000;
+    background-image: url("https://raw.githubusercontent.com/Zubair1020/flower-shope/main/images/pngwing%2010.png"), linear-gradient(150deg, #434343 0%, black 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain, 200%;
+    font-family: "El Messiri", sans-serif;
+    min-height: 100vh;
+    min-width: 95vw;
+
+}
+
+.heading {
+    position: absolute;
+    color: #184d18;
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: 1.25;
+    translate: 45rem 8rem;
+    z-index: 1;
+
+    .tasbiValue {
+        font-style: italic;
+        color: #2b793a;
+    }
+
+
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.38);
+    backdrop-filter: blur(.2rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    max-width: 105rem;
+    padding: 12rem 2rem;
+    border-radius: 1rem;
+    margin-inline: auto;
+    translate: 0 5rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.resetBtn {
+    position: absolute;
+    composes: tasbiButton from "../tasbi/Tasbi.module.css";
+    background-color: crimson;
+    font-size: 1.8rem;
+    isolation: isolate;
+    translate: 57rem -2rem;
+
+    &:hover {
+        translate: 57rem -2rem;
+        scale: 1.1;
+    }
+
+    &:active {
+        scale: 1;
+    }
+}
